@@ -1,0 +1,29 @@
+# IDE
+.vscode/*
+
+# R
+.Rproj.user
+.Rhistory
+
+# Python
+*.pyc
+**/__pycache__
+.ipynb_checkpoints
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Log files
+*.log
+
+# Cache files
+.cache/
+
+# Folders
+validation/outputs

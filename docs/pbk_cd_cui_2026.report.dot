@@ -1,0 +1,380 @@
+digraph {
+	graph [ratio=fill,
+		size="7,4"
+	];
+	node [fontname=Arial];
+	subgraph cluster_Lung {
+		graph [color=black,
+			fillcolor=lightblue,
+			fontname=Arial,
+			href="#compartment-Lung",
+			label="Lung
+[PBPKO:00559]",
+			shape=box,
+			style="filled,rounded"
+		];
+		ALU	[color=black,
+			fillcolor=gold,
+			href="#species-ALU",
+			label="ALU
+[PBPKO:00504]",
+			shape=box,
+			style="filled,rounded"];
+	}
+	subgraph cluster_GILumen {
+		graph [color=black,
+			fillcolor=lightblue,
+			fontname=Arial,
+			href="#compartment-GILumen",
+			label="GILumen
+[PBPKO:00478]",
+			shape=box,
+			style="filled,rounded"
+		];
+		AGILumen	[color=black,
+			fillcolor=gold,
+			href="#species-AGILumen",
+			label="AGILumen
+[PBPKO:06009]",
+			shape=box,
+			style="filled,rounded"];
+	}
+	subgraph cluster_ExtraTissueBlood {
+		graph [color=black,
+			fillcolor=lightblue,
+			fontname=Arial,
+			href="#compartment-ExtraTissueBlood",
+			label="ExtraTissueBlood
+[-]",
+			shape=box,
+			style="filled,rounded"
+		];
+		AETB_Free	[color=black,
+			fillcolor=mediumspringgreen,
+			href="#species-AETB_Free",
+			label="AETB_Free
+[-]",
+			shape=box,
+			style="filled,rounded"];
+		AETB_PP	[color=black,
+			fillcolor=gold,
+			href="#species-AETB_PP",
+			label="AETB_PP
+[-]",
+			shape=box,
+			style="filled,rounded"];
+		AETB_RBC	[color=black,
+			fillcolor=gold,
+			href="#species-AETB_RBC",
+			label="AETB_RBC
+[-]",
+			shape=box,
+			style="filled,rounded"];
+	}
+	subgraph cluster_LiverBlood {
+		graph [color=black,
+			fillcolor=lightblue,
+			fontname=Arial,
+			href="#compartment-LiverBlood",
+			label="LiverBlood
+[PBPKO:00558]",
+			shape=box,
+			style="filled,rounded"
+		];
+		ALiverB_Free	[color=black,
+			fillcolor=mediumspringgreen,
+			href="#species-ALiverB_Free",
+			label="ALiverB_Free
+[-]",
+			shape=box,
+			style="filled,rounded"];
+		ALiverB_PP	[color=black,
+			fillcolor=gold,
+			href="#species-ALiverB_PP",
+			label="ALiverB_PP
+[-]",
+			shape=box,
+			style="filled,rounded"];
+		ALiverB_RBC	[color=black,
+			fillcolor=gold,
+			href="#species-ALiverB_RBC",
+			label="ALiverB_RBC
+[-]",
+			shape=box,
+			style="filled,rounded"];
+	}
+	subgraph cluster_LiverTissue {
+		graph [color=black,
+			fillcolor=lightblue,
+			fontname=Arial,
+			href="#compartment-LiverTissue",
+			label="LiverTissue
+[PBPKO:00558]",
+			shape=box,
+			style="filled,rounded"
+		];
+		ALiverT_Free	[color=black,
+			fillcolor=mediumspringgreen,
+			href="#species-ALiverT_Free",
+			label="ALiverT_Free
+[-]",
+			shape=box,
+			style="filled,rounded"];
+		ALiverT_MT	[color=black,
+			fillcolor=gold,
+			href="#species-ALiverT_MT",
+			label="ALiverT_MT
+[-]",
+			shape=box,
+			style="filled,rounded"];
+	}
+	subgraph cluster_KidneyBlood {
+		graph [color=black,
+			fillcolor=lightblue,
+			fontname=Arial,
+			href="#compartment-KidneyBlood",
+			label="KidneyBlood
+[PBPKO:00557]",
+			shape=box,
+			style="filled,rounded"
+		];
+		AKidneyB_Free	[color=black,
+			fillcolor=mediumspringgreen,
+			href="#species-AKidneyB_Free",
+			label="AKidneyB_Free
+[-]",
+			shape=box,
+			style="filled,rounded"];
+		AKidneyB_PP	[color=black,
+			fillcolor=gold,
+			href="#species-AKidneyB_PP",
+			label="AKidneyB_PP
+[-]",
+			shape=box,
+			style="filled,rounded"];
+		AKidneyB_RBC	[color=black,
+			fillcolor=gold,
+			href="#species-AKidneyB_RBC",
+			label="AKidneyB_RBC
+[-]",
+			shape=box,
+			style="filled,rounded"];
+	}
+	subgraph cluster_KidneyTissue {
+		graph [color=black,
+			fillcolor=lightblue,
+			fontname=Arial,
+			href="#compartment-KidneyTissue",
+			label="KidneyTissue
+[PBPKO:00557]",
+			shape=box,
+			style="filled,rounded"
+		];
+		AKidneyT_Free	[color=black,
+			fillcolor=mediumspringgreen,
+			href="#species-AKidneyT_Free",
+			label="AKidneyT_Free
+[-]",
+			shape=box,
+			style="filled,rounded"];
+		AKidneyT_MT	[color=black,
+			fillcolor=gold,
+			href="#species-AKidneyT_MT",
+			label="AKidneyT_MT
+[-]",
+			shape=box,
+			style="filled,rounded"];
+	}
+	subgraph cluster_RestofBodyBlood {
+		graph [color=black,
+			fillcolor=lightblue,
+			fontname=Arial,
+			href="#compartment-RestofBodyBlood",
+			label="RestofBodyBlood
+[PBPKO:00450]",
+			shape=box,
+			style="filled,rounded"
+		];
+		ARBB_Free	[color=black,
+			fillcolor=mediumspringgreen,
+			href="#species-ARBB_Free",
+			label="ARBB_Free
+[-]",
+			shape=box,
+			style="filled,rounded"];
+		ARBB_PP	[color=black,
+			fillcolor=gold,
+			href="#species-ARBB_PP",
+			label="ARBB_PP
+[-]",
+			shape=box,
+			style="filled,rounded"];
+		ARBB_RBC	[color=black,
+			fillcolor=gold,
+			href="#species-ARBB_RBC",
+			label="ARBB_RBC
+[-]",
+			shape=box,
+			style="filled,rounded"];
+	}
+	subgraph cluster_RestofBodyTissue {
+		graph [color=black,
+			fillcolor=lightblue,
+			fontname=Arial,
+			href="#compartment-RestofBodyTissue",
+			label="RestofBodyTissue
+[PBPKO:00450]",
+			shape=box,
+			style="filled,rounded"
+		];
+		ARBT_Free	[color=black,
+			fillcolor=mediumspringgreen,
+			href="#species-ARBT_Free",
+			label="ARBT_Free
+[-]",
+			shape=box,
+			style="filled,rounded"];
+	}
+	subgraph cluster_Filtrate {
+		graph [color=black,
+			fillcolor=lightblue,
+			fontname=Arial,
+			href="#compartment-Filtrate",
+			label="Filtrate
+[PBPKO:00397]",
+			shape=box,
+			style="filled,rounded"
+		];
+		AFiltrate_Free	[color=black,
+			fillcolor=mediumspringgreen,
+			href="#species-AFiltrate_Free",
+			label="AFiltrate_Free
+[-]",
+			shape=box,
+			style="filled,rounded"];
+		AFiltrate_MT	[color=black,
+			fillcolor=gold,
+			href="#species-AFiltrate_MT",
+			label="AFiltrate_MT
+[-]",
+			shape=box,
+			style="filled,rounded"];
+	}
+	subgraph cluster_Urine {
+		graph [color=black,
+			fillcolor=lightblue,
+			fontname=Arial,
+			href="#compartment-Urine",
+			label="Urine
+[PBPKO:00556]",
+			shape=box,
+			style="filled,rounded"
+		];
+		AUrineFiltrate	[color=black,
+			fillcolor=gold,
+			href="#species-AUrineFiltrate",
+			label="AUrineFiltrate
+[PBPKO:00272]",
+			shape=box,
+			style="filled,rounded"];
+		AUrineKidneyTissue	[color=black,
+			fillcolor=gold,
+			href="#species-AUrineKidneyTissue",
+			label="AUrineKidneyTissue
+[PBPKO:00272]",
+			shape=box,
+			style="filled,rounded"];
+	}
+	subgraph cluster_Feces {
+		graph [color=black,
+			fillcolor=lightblue,
+			fontname=Arial,
+			href="#compartment-Feces",
+			label="Feces
+[PBPKO:00555]",
+			shape=box,
+			style="filled,rounded"
+		];
+		AFecesUnabsorbed	[color=black,
+			fillcolor=gold,
+			href="#species-AFecesUnabsorbed",
+			label="AFecesUnabsorbed
+[PBPKO:00273]",
+			shape=box,
+			style="filled,rounded"];
+		AFecesBile	[color=black,
+			fillcolor=gold,
+			href="#species-AFecesBile",
+			label="AFecesBile
+[PBPKO:00273]",
+			shape=box,
+			style="filled,rounded"];
+		AFecesIT	[color=black,
+			fillcolor=gold,
+			href="#species-AFecesIT",
+			label="AFecesIT
+[PBPKO:00273]",
+			shape=box,
+			style="filled,rounded"];
+	}
+	ALU -> AGILumen	[label=_J0];
+	ALU -> AETB_Free	[label=_J1];
+	ALU -> AETB_PP	[label=_J2];
+	AGILumen -> ALiverB_Free	[label=_J3];
+	AGILumen -> ALiverB_PP	[label=_J4];
+	AETB_Free -> AETB_PP	[label=_J15];
+	AETB_Free -> AETB_RBC	[label=_J17];
+	AETB_Free -> ALiverB_Free	[label=_J5];
+	AETB_Free -> AKidneyB_Free	[label=_J8];
+	AETB_Free -> ARBB_Free	[label=_J11];
+	AETB_PP -> AETB_Free	[label=_J14];
+	AETB_PP -> ALiverB_PP	[label=_J6];
+	AETB_PP -> AKidneyB_PP	[label=_J9];
+	AETB_PP -> ARBB_PP	[label=_J12];
+	AETB_RBC -> AETB_Free	[label=_J16];
+	AETB_RBC -> ALiverB_RBC	[label=_J7];
+	AETB_RBC -> AKidneyB_RBC	[label=_J10];
+	AETB_RBC -> ARBB_RBC	[label=_J13];
+	ALiverB_Free -> AETB_Free	[label=_J18];
+	ALiverB_Free -> ALiverB_PP	[label=_J19];
+	ALiverB_Free -> ALiverB_RBC	[label=_J20];
+	ALiverB_Free -> ALiverT_Free	[label=_J26];
+	ALiverB_PP -> AETB_PP	[label=_J21];
+	ALiverB_PP -> ALiverB_Free	[label=_J22];
+	ALiverB_RBC -> AETB_RBC	[label=_J23];
+	ALiverB_RBC -> ALiverB_Free	[label=_J24];
+	ALiverT_Free -> ALiverB_Free	[label=_J25];
+	ALiverT_Free -> ALiverT_MT	[label=_J28];
+	ALiverT_Free -> AFecesBile	[label=_J56,
+		minlen=1];
+	ALiverT_MT -> ALiverB_PP	[label=_J29];
+	ALiverT_MT -> ALiverT_Free	[label=_J27];
+	AKidneyB_Free -> AETB_Free	[label=_J30];
+	AKidneyB_Free -> AKidneyB_PP	[label=_J31];
+	AKidneyB_Free -> AKidneyB_RBC	[label=_J32];
+	AKidneyB_Free -> AFiltrate_Free	[label=_J50];
+	AKidneyB_PP -> AETB_PP	[label=_J33];
+	AKidneyB_PP -> AKidneyB_Free	[label=_J34];
+	AKidneyB_PP -> AFiltrate_MT	[label=_J51];
+	AKidneyB_RBC -> AETB_RBC	[label=_J35];
+	AKidneyB_RBC -> AKidneyB_Free	[label=_J36];
+	AKidneyT_Free -> AKidneyB_Free	[label=_J39];
+	AKidneyT_Free -> AKidneyT_MT	[label=_J38];
+	AKidneyT_Free -> AUrineKidneyTissue	[label=_J54];
+	AKidneyT_MT -> AKidneyT_Free	[label=_J37];
+	AKidneyT_MT -> AUrineKidneyTissue	[label=_J55];
+	ARBB_Free -> AETB_Free	[label=_J41];
+	ARBB_Free -> ARBB_PP	[label=_J42];
+	ARBB_Free -> ARBB_RBC	[label=_J43];
+	ARBB_Free -> ARBT_Free	[label=_J49];
+	ARBB_PP -> AETB_PP	[label=_J44];
+	ARBB_PP -> ARBB_Free	[label=_J45];
+	ARBB_RBC -> AETB_RBC	[label=_J46];
+	ARBB_RBC -> ARBB_Free	[label=_J47];
+	ARBT_Free -> ARBB_Free	[label=_J48];
+	ARBT_Free -> AFecesIT	[label=_J57,
+		minlen=1];
+	AFiltrate_Free -> AUrineFiltrate	[label=_J52];
+	AFiltrate_MT -> AKidneyT_MT	[label=_J40];
+	AFiltrate_MT -> AUrineFiltrate	[label=_J53];
+}

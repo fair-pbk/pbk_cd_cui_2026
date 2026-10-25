@@ -1,0 +1,8 @@
+reference_models:
+  - id: pbk_cd_gastellu_2026
+    type: SBML
+    url: 'https://raw.githubusercontent.com/fair-pbk/pbk-cd-gastellu-2026/refs/heads/develop/model/pbk_cd_gastellu_2026_revised.sbml'
+    parametrisations:
+      - id: default
+        url: https://raw.githubusercontent.com/fair-pbk/pbk-cd-gastellu-2026/refs/heads/develop/model/pbk_cd_gastellu_2026_revised.params.csv
+    target_path: 'validation/reference/pbk_cd_gastellu_2026'

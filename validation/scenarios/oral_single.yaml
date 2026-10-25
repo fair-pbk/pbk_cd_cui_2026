@@ -1,0 +1,73 @@
+id: oral_single
+label: Oral single
+model_instances:
+  - id: pbk_cd_cui_2026
+    label: Cui (2026)
+    model_path: ./model/pbk_cd_cui_2026.sbml
+    param_file: ./model/pbk_cd_cui_2026_default.params.csv
+    target_mappings:
+      BW: 'BWl'
+      BWRef: 'BWl'
+      AGut: 'AGILumen'
+      ALiver: 'ALiverT_Free'
+      APlasma: 'ARBB_PP + ALiverB_PP + AKidneyB_PP + AETB_PP'
+      CPlasma: '[ARBB_PP]'
+      CLiver: '[ALiverT_Free]'
+      AKidney: 'AKidneyT_Free'
+      CKidney: '[AKidneyT_Free]'
+  - id: pbk_cd_gastellu_2026_revised
+    label: Gastellu (2026)
+    model_path: ./validation/reference/pbk_cd_gastellu_2026/pbk_cd_gastellu_2026_revised.sbml
+    param_file: './validation/reference/pbk_cd_gastellu_2026/pbk_cd_gastellu_2026_revised.params.csv'
+    target_mappings:
+      BW: 'wbw'
+      AGut: 'GUT_LUMEN'
+      ALiver: 'LIVER'
+      APlasma: 'PLASMA'
+      CPlasma: '[PLASMA]'
+      CLiver: '[LIVER]'
+      AKidney: 'KIDNEY'
+      CKidney: '[KIDNEY]'
+scenarios:
+  - id: oral_single
+    label: Oral single dose
+    time_unit: DAY
+    amount_unit: MICROGRAMS
+    duration: 40
+    evaluation_resolution: 24
+    dosing_events:
+      - type: single_bolus
+        target: AGut
+        amount: 1000
+        time: 0
+    parameters:
+      AgeInit: 30
+      BWRef: 85
+    outputs:
+      - id: BW
+        label: BW
+        output: wbw
+      - id: Age
+        label: Age
+        output: Age
+      - id: AGut
+        label: Amount in gut
+        output: AGut
+      - id: APlasma
+        label: Amount in plasma
+        output: APlasma
+      - id: CPlasma
+        label: Concentration in plasma
+        output: CPlasma
+      - id: ALiver
+        label: Amount in liver
+        output: LIVER
+      - id: CLiver
+        label: Concentration in liver
+        output: CLiver
+      - id: AKidney
+        label: Amount in kidney
+        output: AKidney
+      - id: CKidney
+        label: Concentration in kidney
+        output: CKidney

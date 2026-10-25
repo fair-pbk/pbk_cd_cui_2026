@@ -1,0 +1,31 @@
+name: Build
+on: [push, workflow_dispatch]
+
+jobs:
+  validate:
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pip
+        run: python -m pip install --upgrade pip
+      - name: Install graphviz
+        run: sudo apt-get install graphviz
+      - name: Install requirements
+        run: pip install -r requirements.txt
+      - name: Instantiate template instances
+        run: python scripts/instantiate_template.py
+      - name: Create and annotate SBML
+        run: python scripts/create_sbml.py
+      - name: Verify SBML model file unchanged
+        run: |
+          if ! git diff --quiet --ignore-cr-at-eol --diff-filter=M -- models/**/*.sbml; then
+            echo "One or more SBML files differ from repository versions."
+            git diff -- models/**/*.sbml
+            exit 1
+          fi
